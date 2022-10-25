@@ -5,43 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <a href="#">
         <img src="./images/logo.png" width="69" alt="Barbershop" />
       </a>
 
       <nav>
-        <ul>
+        <ul class="list">
           <li>
-            <a href="#">About</a>
+            <a href="#" class="link">About</a>
           </li>
           <li>
-            <a href="#">Services and prices</a>
+            <a href="#" class="link">Services and prices</a>
           </li>
           <li>
-            <a href="#">Barbers</a>
+            <a href="#" class="link accent-link">Barbers</a>
           </li>
           <li>
-            <a href="#">Contacts</a>
+            <a href="#" class="link">Contacts</a>
           </li>
         </ul>
       </nav>
 
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <a href="#onlineBooking">Online-booking</a>
+      <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
+      <a class="button white" href="#onlineBooking">Online-booking</a>
     </header>
     <main>
-      <section>
-        <ul>
-          <li><a href="#" target="_blank">Instagram</a></li>
-          <li><a href="#" target="_blank">Youtube</a></li>
+      <section class="hero">
+        <ul class="social">
+          <li><a href="#" class="social-link" target="_blank">Instagram</a></li>
+          <li><a href="#" class="social-link" target="_blank">Youtube</a></li>
         </ul>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>
+        <p class="uper-title">A hair salon for men in Kyiv</p>
+        <h1 class="title">BarberShop</h1>
+        <p class="subtitle">
           We are experts in trendy men’s haircuts. We work quickly, carefully
           and with style.
         </p>
@@ -49,8 +56,8 @@
       <section>
         <img src="./images/about-1.jpg" width="270" alt="barber work" />
         <img src="./images/about-2.jpg" width="270" alt="barber work" />
-        <p>About</p>
-        <h2>Best Barbershop in your city</h2>
+        <p class="uper-title dark">About</p>
+        <h2 class="content-title">Best Barbershop in your city</h2>
         <p>
           If you want to add more confidence to your image, you should
           definitely visit us.
@@ -62,11 +69,11 @@
           same wave" with clients. Therefore, we are always ready to improve
           everyone who comes to us!
         </p>
-        <a href="#onlineBooking">Online-booking</a>
+        <a class="button dark" href="#onlineBooking">Online-booking</a>
       </section>
       <section>
-        <p>Spend your time with the best masters</p>
-        <h2>Services and prices</h2>
+        <p class="uper-title">Spend your time with the best masters</p>
+        <h2 class="content-title">Services and prices</h2>
         <ul>
           <li>
             <ul>
@@ -117,8 +124,146 @@
             </ul>
           </li>
         </ul>
+        <a class="button white" href="#onlineBooking">Online-booking</a>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <ul>
+              <li>
+                <p>600</p>
+                <p>Satisfied customers per day</p>
+              </li>
+              <li>
+                <p>600</p>
+                <p>Satisfied customers per day</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <p>600</p>
+                <p>Satisfied customers per day</p>
+              </li>
+              <li>
+                <p>600</p>
+                <p>Satisfied customers per day</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p class="uper-title">Old traditional school</p>
+        <h2 class="content-title">¿Why people come to us?</h2>
+        <p>
+          Only good things are said about us. But it's better to see and feel 1
+          time than read 10 times.
+        </p>
+      </section>
+      <section>
+        <p class="uper-title dark">For true enjoyers of the atmosphere</p>
+        <h2 class="content-title">Our barbers</h2>
+        <ul>
+          <li>
+            <img src="./images/barber-1.jpg" width="370" alt="John Smith" />
+            <h3 class="team-name">John Smith</h3>
+            <p class="team-position">Extreme Barber</p>
+            <ul>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/facebook.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/linkedin.svg" alt="linkedin"
+                /></a>
+              </li>
+            </ul>
+          </li>
+          <li class="">
+            <img src="./images/barber-2.jpg" width="370" alt="Michele Doe" />
+            <h3 class="team-name">Michele Doe</h3>
+            <p class="team-position">Extreme Barber</p>
+            <ul>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/facebook.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/linkedin.svg" alt="linkedin"
+                /></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <img src="./images/barber-3.jpg" width="370" alt="Alan Black" />
+            <h3 class="team-name">Alan Black</h3>
+            <p class="team-position">Extreme Barber</p>
+            <ul>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/facebook.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank"
+                  ><img src="./images/linkedin.svg" alt="linkedin"
+                /></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <p class="uper-title dark">In Latin, "barba" means "beard"</p>
+        <h2 class="content-title">Works</h2>
+        <ul>
+          <li><img src="./images/work-1.jpg" width="270" alt="work" /></li>
+          <li><img src="./images/work-2.jpg" width="270" alt="work" /></li>
+          <li><img src="./images/work-3.jpg" width="270" alt="work" /></li>
+          <li><img src="./images/work-4.jpg" width="270" alt="work" /></li>
+        </ul>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <p class="footer-policy">Copyright 2020</p>
+      <ul class="social">
+        <li><a href="#" class="social-link" target="_blank">Instagram</a></li>
+        <li><a href="#" class="social-link" target="_blank">Youtube</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,128 @@
+:root {
+  /* Fonts */
+  --main-font: "Open Sans", sans-serif;
+  --second-font: "Raleway", sans-serif;
+
+  /* Colors */
+  --white-color: #fff;
+  --accent-color: #ff6c00;
+  --text-color: #555;
+  --text-dark-color: #303030;
+  --text-light-color: #9da4bd;
+
+  /* Background color */
+  --main-bg-color: #fff;
+  --accent-bg-color: #191c26;
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+.header,
+.hero {
+  background-color: var(--accent-bg-color);
+}
+
+.link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  outline: transparent;
+  color: var(--white-color);
+}
+
+.button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button.white {
+  color: var(--white-color);
+}
+
+.button.dark {
+  color: var(--text-dark-color);
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.25;
+  letter-spacing: 0.2em;
+  color: var(--text-dark-color);
+}
+
+.link:hover,
+.link:focus,
+.social-link:hover,
+.social-link:focus {
+  color: var(--accent-color);
+}
+
+.uper-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-light-color);
+}
+
+.uper-title.dark {
+  color: var(--text-dark-color);
+}
+
+.hero .title {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+
+.hero .subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.content-title {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--text-dark-color);
+}
+
+.team-name {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text-dark-color);
+}
+
+.team-position {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.footer-policy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.25;
+  letter-spacing: 0.2em;
+  color: var(--text-light-color);
+}
