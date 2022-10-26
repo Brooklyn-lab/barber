@@ -13,12 +13,47 @@
   /* Background color */
   --main-bg-color: #fff;
   --accent-bg-color: #191c26;
+  --light-bg-color: #f7f7f7;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 body {
   font-family: var(--main-font);
   background-color: var(--main-bg-color);
   color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .header,
@@ -32,10 +67,39 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
   outline: transparent;
+  text-decoration: none;
   color: var(--white-color);
 }
 
+.uper-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-light-color);
+}
+
+.uper-title.dark {
+  color: var(--text-dark-color);
+}
+
+.content-title {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--text-dark-color);
+}
+
+.content-text {
+}
+
 .button {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -43,6 +107,7 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button.white {
@@ -59,6 +124,11 @@ body {
   line-height: 1.25;
   letter-spacing: 0.2em;
   color: var(--text-dark-color);
+  text-decoration: none;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .link:hover,
@@ -68,18 +138,10 @@ body {
   color: var(--accent-color);
 }
 
-.uper-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: var(--text-light-color);
-}
-
-.uper-title.dark {
-  color: var(--text-dark-color);
-}
+/* Hero section */
 
 .hero .title {
+  margin-bottom: 20px;
   font-family: var(--second-font);
   font-weight: 700;
   font-size: 72px;
@@ -94,13 +156,36 @@ body {
   letter-spacing: 0.02em;
 }
 
-.content-title {
-  font-family: var(--second-font);
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
-  color: var(--text-dark-color);
+/* About section */
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+/* Services section */
+
+.services {
+  background-color: var(--accent-bg-color);
+}
+
+.services-title {
+  margin-bottom: 44px;
+}
+
+/* Traditional section */
+
+.traditional-title {
+  margin-bottom: 20px;
+}
+
+/* Barbers section */
+
+.barbers {
+  background-color: var(--light-bg-color);
+}
+
+.barbers-title {
+  margin-bottom: 44px;
 }
 
 .team-name {
@@ -118,6 +203,33 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+
+.team-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social__link {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+/* .team-social__link:hover,
+.team-social__link:focus {
+  
+} */
+
+/* Works section */
+
+.works-title {
+  margin-bottom: 20px;
+}
+
+/* Footer */
 
 .footer-policy {
   font-weight: 600;
