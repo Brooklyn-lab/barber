@@ -14,6 +14,10 @@
   --main-bg-color: #fff;
   --accent-bg-color: #191c26;
   --light-bg-color: #f7f7f7;
+
+  /*  */
+  --items: 3;
+  --indent: 30px;
 }
 
 body,
@@ -51,6 +55,16 @@ body {
   padding-left: 15px;
 }
 
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.card-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -73,9 +87,9 @@ body {
 
 .uper-title {
   margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
   color: var(--text-light-color);
 }
 
@@ -93,6 +107,10 @@ body {
 }
 
 .content-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
 }
 
 .button {
@@ -118,6 +136,10 @@ body {
   color: var(--text-dark-color);
 }
 
+.social {
+  display: flex;
+}
+
 .social-link {
   font-weight: 600;
   font-size: 11px;
@@ -136,6 +158,39 @@ body {
 .social-link:hover,
 .social-link:focus {
   color: var(--accent-color);
+}
+
+/* Header */
+
+.header {
+  padding: 32px 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  margin-right: 130px;
+}
+
+.nav .list {
+  display: flex;
+}
+
+.nav .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contacts .link {
+  margin-right: 40px;
 }
 
 /* Hero section */
@@ -158,8 +213,36 @@ body {
 
 /* About section */
 
+.about-container {
+  display: flex;
+}
+
+.about-set {
+  margin-right: 30px;
+}
+
+.about-item {
+  --items: 2;
+}
+
+.about-subtitle {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.about-content {
+  max-width: 470px;
+}
+
 .about-title {
   margin-bottom: 20px;
+}
+
+.about-text {
+  margin-bottom: 42px;
 }
 
 /* Services section */
@@ -172,10 +255,41 @@ body {
   margin-bottom: 44px;
 }
 
+.services-item {
+  --items: 2;
+}
+
 /* Traditional section */
 
 .traditional-title {
   margin-bottom: 20px;
+}
+
+.traditional-item {
+  --items: 2;
+  max-width: 170px;
+  padding: 20px 24px;
+  text-align: center;
+  background-color: var(--light-bg-color);
+}
+
+.traditional-item__elem:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.traditional-item__count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+  color: var(--text-dark-color);
+}
+
+.traditional-item__description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
 }
 
 /* Barbers section */
@@ -188,7 +302,12 @@ body {
   margin-bottom: 44px;
 }
 
+.barbers-item__content {
+  padding: 30px 15px;
+}
+
 .team-name {
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
@@ -197,11 +316,17 @@ body {
 }
 
 .team-position {
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
 }
 
 .team-social__item:not(:last-child) {
@@ -229,7 +354,21 @@ body {
   margin-bottom: 20px;
 }
 
+.works-item {
+  --items: 4;
+}
+
 /* Footer */
+
+.footer {
+  padding: 56px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .footer-policy {
   font-weight: 600;
