@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BarberShop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,22 +49,24 @@
       </div>
     </header>
     <main>
-      <section class="hero section">
-        <div class="container">
-          <ul class="social">
-            <li class="social-item">
-              <a href="#" class="social-link" target="_blank">Instagram</a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="social-link" target="_blank">Youtube</a>
-            </li>
-          </ul>
-          <p class="uper-title">A hair salon for men in Kyiv</p>
-          <h1 class="title">BarberShop</h1>
-          <p class="subtitle">
-            We are experts in trendy men’s haircuts. We work quickly, carefully
-            and with style.
-          </p>
+      <section class="hero">
+        <div class="hero-wrapper section">
+          <div class="container">
+            <ul class="social">
+              <li class="social-item">
+                <a href="#" class="social-link" target="_blank">Instagram</a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link" target="_blank">Youtube</a>
+              </li>
+            </ul>
+            <p class="uper-title">A hair salon for men in Kyiv</p>
+            <h1 class="title">BarberShop</h1>
+            <p class="subtitle">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
         </div>
       </section>
       <section class="about section">
@@ -161,8 +163,8 @@
         </div>
       </section>
       <section class="traditional section">
-        <div class="container">
-          <ul class="card-set">
+        <div class="container traditional-container">
+          <ul class="card-set traditional-set">
             <li class="card-item traditional-item">
               <ul class="traditional-item__list">
                 <li class="traditional-item__elem">
@@ -179,7 +181,7 @@
                 </li>
               </ul>
             </li>
-            <li class="card-item traditional-item">
+            <li class="card-item traditional-item traditional-item--second">
               <ul class="traditional-item__list">
                 <li class="traditional-item__elem">
                   <p class="traditional-item__count">600</p>
@@ -196,14 +198,16 @@
               </ul>
             </li>
           </ul>
-          <p class="uper-title">Old traditional school</p>
-          <h2 class="content-title traditional-title">
-            ¿Why people come to us?
-          </h2>
-          <p>
-            Only good things are said about us. But it's better to see and feel
-            1 time than read 10 times.
-          </p>
+          <div class="traditional-contant">
+            <p class="uper-title">Old traditional school</p>
+            <h2 class="content-title traditional-title">
+              ¿Why people come to us?
+            </h2>
+            <p>
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
         </div>
       </section>
       <section class="barbers section">
@@ -218,24 +222,32 @@
                 <p class="team-position">Extreme Barber</p>
                 <ul class="team-social">
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/instagram.svg" alt="instagram"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/facebook.svg" alt="facebook"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/twitter.svg" alt="twitter"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/linkedin.svg" alt="linkedin"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -247,24 +259,32 @@
                 <p class="team-position">Extreme Barber</p>
                 <ul class="team-social">
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/instagram.svg" alt="instagram"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/facebook.svg" alt="facebook"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/twitter.svg" alt="twitter"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/linkedin.svg" alt="linkedin"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -276,24 +296,32 @@
                 <p class="team-position">Extreme Barber</p>
                 <ul class="team-social">
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/instagram.svg" alt="instagram"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/facebook.svg" alt="facebook"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/twitter.svg" alt="twitter"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-social__item">
-                    <a class="team-social__link" href="#" target="_blank"
-                      ><img src="./images/linkedin.svg" alt="linkedin"
-                    /></a>
+                    <a class="team-social__link" href="#" target="_blank">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
