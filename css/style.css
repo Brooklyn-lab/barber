@@ -610,8 +610,8 @@ body {
 .modal-body {
   position: relative;
   width: 528px;
-  height: 581px;
-  background: #ffffff;
+  padding: 40px;
+  background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -621,12 +621,142 @@ body {
   position: absolute;
   right: 8px;
   top: 8px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   cursor: pointer;
+  outline: none;
+}
+
+.close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover .close,
+.close-btn:focus .close {
+  fill: var(--accent-color);
+}
+
+/*  */
+
+.form {
+}
+
+.form-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.label {
+  display: block;
+  padding-bottom: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #212121;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus {
+  border-color: var(--accent-color);
+}
+
+.input:focus + .input-icon {
+  fill: var(--accent-color);
+}
+
+.input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.field {
+  padding-left: 45px;
+}
+
+.textarea {
+  height: 120px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.form-button {
+  display: flex;
+  margin: 0 auto;
+}
+
+.check-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.check-wrapp {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.check-icon {
+  opacity: 0;
+}
+
+.input-check {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.input-check:checked + .check-wrapp {
+  border: none;
+}
+
+.input-check:checked + .check-wrapp .check-icon {
+  opacity: 1;
 }
