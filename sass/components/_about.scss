@@ -1,0 +1,31 @@
+.about__container {
+  display: flex;
+}
+
+.about__set {
+  margin-right: 30px;
+}
+
+.about__item {
+  --items: 2;
+}
+
+.about__subtitle {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.about__content {
+  max-width: 470px;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__text {
+  margin-bottom: 42px;
+}
