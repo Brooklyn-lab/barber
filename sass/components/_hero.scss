@@ -1,0 +1,23 @@
+.hero__wrapper {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url("../images/hero-bg.jpg") no-repeat center/cover, var(--accent-bg-color);
+}
+
+.hero__title {
+  margin-bottom: 20px;
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}

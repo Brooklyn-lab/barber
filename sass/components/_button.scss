@@ -3,6 +3,7 @@
   padding: 12px 20px;
   border: 1px solid var(--accent-color);
   border-radius: 25px;
+  background-color: transparent;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -18,17 +19,5 @@
 
   &--dark {
     color: var(--text-dark-color);
-  }
-}
-
-.input-check {
-  &:checked + .check-wrapp {
-    border: none;
-  }
-}
-
-.input-check:checked + .check-wrapp {
-  .check-icon {
-    opacity: 1;
   }
 }

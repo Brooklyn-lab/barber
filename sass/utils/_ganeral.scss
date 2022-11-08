@@ -64,3 +64,13 @@ body {
 .card-set__item {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
+
+.link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  outline: transparent;
+  text-decoration: none;
+  color: var(--white-color);
+}

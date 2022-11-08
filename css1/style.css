@@ -1,4 +1,4 @@
-.header {
+/* .header {
   background-color: var(--accent-bg-color);
 }
 
@@ -10,7 +10,7 @@
   outline: transparent;
   text-decoration: none;
   color: var(--white-color);
-}
+} */
 
 /* .social {
   display: flex;
@@ -39,7 +39,7 @@
 
 /* Header */
 
-.header {
+/* .header {
   padding: 32px 0;
 }
 
@@ -91,11 +91,11 @@
 
 .contacts .link {
   margin-right: 40px;
-}
+} */
 
 /* Hero section */
 
-.hero-wrapper {
+/* .hero-wrapper {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
@@ -117,7 +117,7 @@
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-}
+} */
 
 /* About section */
 
@@ -420,7 +420,7 @@
   color: var(--text-light-color);
 } */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -440,9 +440,9 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
+} */
 
-.modal {
+/* .modal {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -485,11 +485,11 @@
 .close-btn:hover .close,
 .close-btn:focus .close {
   fill: var(--accent-color);
-}
+} */
 
 /*  */
 
-.form {
+/* .form {
 }
 
 .form-title {
@@ -603,4 +603,4 @@
 
 .input-check:checked + .check-wrapp .check-icon {
   opacity: 1;
-}
+} */
