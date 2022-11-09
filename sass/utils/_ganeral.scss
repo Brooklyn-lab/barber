@@ -42,17 +42,42 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 31px;
+  padding-left: 31px;
+
+  @media screen and (min-width: $mob) {
+    width: $mob;
+  }
+
+  @media screen and (min-width: $tabl) {
+    width: $tabl;
+    padding-right: 39px;
+    padding-left: 39px;
+  }
+
+  @media screen and (min-width: $desc) {
+    width: $desc;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @media screen and (min-width: $tabl) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: $desc) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .card-set {

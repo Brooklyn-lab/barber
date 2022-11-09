@@ -4,6 +4,10 @@
 
 .about__set {
   margin-right: 30px;
+
+  @media screen and (max-width: $pre-tabl) {
+    display: none;
+  }
 }
 
 .about__item {
